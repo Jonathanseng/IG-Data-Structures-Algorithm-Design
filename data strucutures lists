@@ -1,1 +1,183 @@
+Type @ IG’s development way
+
+Ref: Fundamentals of the computer algorithm
+
+Introduction : 
+What is an algorithm?
+In short it is a step by step to solve the problems. In programming we are talking about the way we can write code to solve the problems. When we are hearing of writing code to solve the problems it depends on the problems as well. 
+
+Ex: 2 + 3 = 5 (is this an algorithm? Yes it is based on the meaning of it)
+
+The term algorithm comes from the name of the Persian author named Abu Ja’far Mohammed ibn Musa al Khowarizmi ( 825 A.D.), who wrote the textbook on mathematics. 
+
+Another explanation of the term algorithm is the special method of solving a certain kind of problem. 
+
+How to write the algorithm? 
+
+All types of algorithm built based on 3 components (selection “if/else”, sequence “for loop”, loop”while loop”) and what are the differences between these 3 components? What is the difference between for loop and while loop? We will go in detail. Now look if we know these 3 component can we write any algorithm without the used of the data structures? 
+
+Knowing algorithms of (sequence / selection-decision / loop) is getting 50% of writing the solutions. You need to have the knowledge of data structure which used to stored/ managed / organized data is another 50%. 
+
+As we always heard the term abstract data type and the data structures? What are these? As it explained here:
+
+A data type is a collection of objects together with various operation on the objects. Once the operations on data types are identified we create appropriate abstract data types.
+
+So here is the meaning of the abstract data types: 
+mathematical model + various operations defined on the model = Abstract data type.
+So now to what is the algorithm? 
+Abstract data type + implementation = Data Structure.
+
+To write a good programming language you need to have 
+data structure + algorithm = program.
+
+As Linux Torvald once said bad programmers worry about codes and good programmers think about the data structure and algorithm. 
+
+What is ADT?
+The abstract data type is a special kind of data type, whose behavior is defined by a set of values and set of operations. The keyword “Abstract” is used as we can use these data types, we can perform different operations. But how those operations are working is totally hidden from the user. The ADT is made of primitive data types, but operation logics are hidden.
+Writing structure program
+To continue here:
+
+Analyzing algorithm 
+After knowing the way of how the algorithm was built, it is the time to learn and analyze the algorithm. Two thing that we will consider are:
+
+Time (the running time of the function)
+Space (complexity of the memory consumption)
+
+So what are these Times and Space complexity? For the time analyzing in the     function of the algorithm that we write if we think in the term of Big Oh. That most of the functions that we write will be in the upper bound average bound and lower bound and we can say Big O, Big Theta and Big Theta.
+
+Elementary of the data structures
+To learn and understand the data structures, let's put it in this way. 
+1. Understand the definition of it, 
+2. The way to create it and 
+3. Tts members. Some IDE refers to its members as the attribute or method or functions of those data structures.
+
+Array
+
+Definition: An array is a series of memory locations – or 'boxes' – each of which holds a single item of data, but with each box sharing the same name. All data in an array must be of the same data type. In some programming languages array can be static or dynamic in storing data. Ex: python’s array is static while javascript is dynamic.
+
+Let create the array we will choose one programming language python for doing exercise in this course. Don't worry if you know python you can use your programming skills as you are good with and doing the same thing. Because the concept of creating the data structure in the different programming is just a matter of concept and syntax. Except for C programming if you want to create these data structures you need to build from scratch.
+
+Let create the array in python 
+In order to create the array in python first you need to have name then the assign (=) symbol and the square bracket []
+
+Now array had built in with it function which we can used them according to our purpose. If creating array already why those programmers need to create its functions. The answer is for the benefit of the users to use it. If you are writing in the c programming languages you need to write thousand lines of codes for this types of data structures.
+
+
+Here are the members of the array and it’s usage with the codes sample.
+
+Method             Description
+
+append()          Adds an element at the end of the list
+clear()              Removes all the elements from the list
+copy()              Returns a copy of the list
+count()             Returns the number of elements with the specified value
+extend()       Add the elements of a list (or any iterable), to the end of the current list
+index()          Returns the index of the first element with the specified value
+insert()         Adds an element at the specified position
+pop()            Removes the element at the specified position
+remove()      Removes the first item with the specified value
+reverse()      Reverses the order of the list
+sort()            Sorts the list
+
+
+Let do the codes in creating the array and use its member.
+I am initiate the empty array
+
+myArray =[]
+Then i start to use the member of the array to add the element into the array
+myArray.append(10)
+
+Let add other number for this time we will add to the first index inside the array
+myArray.insert(0,20)
+
+I know many engineers confuse the using of the array members by calling it to other data structure types. Such as you are created and empty dictionary and then calling the array member to use with the dictionary. Will it work? Check it in your code.
+
+
+
+Understand how the array works, know how to create the array and the use of its member then you can go to use other data structures such as Matrix / Stack / Queue / Graph (adjacency matrix) because to create matrix/ stack/ queue and adjacency matrix you need to use the array.
+
+Linked list:
+A linked list is the most sought-after data structure when it comes to handling dynamic data elements. A linked list consists of a data element known as a node. And each node consists of two fields: one field has data, and in the second field, the node has an address that keeps a reference to the next node.
+
+
+
+
+
+Types of linked list:
+
+These are the types of linked list data structures. All of them are created for use with different purposes for storing and managing data. 
+
+Singular linked list
+Doubly linked list
+Circular linked list
+Doubly circular linked list
+Header linked list
+
+    Operation of the linked list: 
+
+Each data structures had it own operations that those engineering programmers (the engineers that created the programming languages) giving a unique name that different from each other but the concept of using it is almost the same. Here are the basic operation of the linked list:
+
+
+
+
+
+Basic Operations on Linked List
+
+    Traversal: To traverse all the nodes one after another.
+    Insertion: To add a node at the given position.
+    Deletion: To delete a node.
+    Searching: To search an element(s) by value.
+    Updating: To update a node.
+    Sorting: To arrange nodes in a linked list in a specific order.
+    Merging: To merge two linked lists into one.
+
+
+** Array and linked list can be called physical data structure. It had its own definition of the usage and the operation on each of these data structures. You will ask what is the physical data structure?
+
+A physical data structure refers to the actual organization of data on a storage device. The logical data structure refers to how the information appears to a program or user. For example, a data file is a collection of information stored together. This is its logical structure. Now here is the beautiful thing of the physical data structure the array / linked list used to create the logical data structures such as stack / queue / trees/ graph/ hashing. How the array and linked list can use to create logical data structure and in what way?
+
+What are the different between logical data structure vs physical data structure?
+
+Physical data structures are actually meant for storing the data in the memory. Then on the stored data or values, we may be performing some operations like inserting more values or deleting existing values or searching for the values, and many more operations. Now, the question is, how you want to utilize those values? How you will be performing insertion and deletion? What is the discipline that you are going to follow? That discipline is defined by logical data structures i.e. stack, queues, trees, graphs, and hash table.
+
+Stack and Queue are Linear Data Structure. Tress and Graphs are non-linear data structures. The Hash table may be a linear or tabular data structure.
+
+
+
+
+
+
+Types of data structures:
+
+Data Structure classified mainly into two types.
+
+Linear Data Structure: A Linear data structure have data elements arranged in a sequential manner and each member element is connected to its previous and next element. Example: LinkedList, stacks, queue, etc.
+
+Non-Linear Data Structures: A non-linear data structure has no set sequence of connecting all its elements and each element can have multiple paths to connect to other elements. Example: Trees, Graphs.
+
+Look at the diagram for detail:
+
+
+
+
+
+
+
+Stacks and Queue
+
+
+Trees
+
+
+Heaps and Heapsort
+
+
+Sets and disjoint set union
+
+
+Graphs
+
+
+Hashing
+
 
