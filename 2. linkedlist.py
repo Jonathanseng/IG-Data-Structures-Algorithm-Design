@@ -3,31 +3,29 @@
 
 # in python code ~ for the creation of linked list
 class IGLinkedList:
-  def __init__(self):
+  def __init__(self, data):
     self.data = data
     self.next = None
     
-class LinkedList:
-
-    def __init__(self):
-        self.head = None
-
-
-if __name__ == '__main__':
-
-    linked_list = LinkedList()
-
-    # Assign item values
-    linked_list.head = Node(1)
-    second = Node(2)
-    third = Node(3)
-
-    # Connect nodes
-    linked_list.head.next = second
-    second.next = third
-
-    # Print the linked list item
-    while linked_list.head != None:
-        print(linked_list.head.item, end=" ")
-        linked_list.head = linked_list.head.next
+# init the head of the linked list
+class headLinkedList:
+  def __init__(self):
+    self.head = None # usually the head did not store any data in it
+    
+ if __name__== '__main__':
+  linked_list = headLinkedList()
+  
+  # Assign item value for the linked list
+  linked_list.head = Node(1)
+  second = Node(2)
+  third = Node(3)
+  
+  # connect the nodes
+  linked_list.head.next = second
+  second.next = third
+  
+  # print the element in the linkedlist
+  while linked_list.head != None:
+    print(linked_list.head.item, end = " ")
+    linked_list.head = linked_list.head.next
     
