@@ -22,4 +22,4 @@ array = []
 
 # let add some element inside the empty array ~ there are 2 ways for inserting the data into the array. 1 is adding to the end of the array we use the append and 2. we use the insert keyworks (built in function for the array in python) 
 array.append(1)
-array.insert(10, 0) # in the bracket 0 is the value and second parameter is the position
+array.insert(10, 0) # in the bracket 0 is the position and second parameter is the value
